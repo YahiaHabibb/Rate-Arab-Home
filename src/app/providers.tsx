@@ -7,10 +7,10 @@ import { Authenticator } from "@aws-amplify/ui-react";
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
     <StoreProvider>
-      <Authenticator.Provider>
+      {/* <Authenticator.Provider> */}
         {children}
         {/* <Auth></Auth> */}
-      </Authenticator.Provider>
+      {/* </Authenticator.Provider> */}
     </StoreProvider>
   );
 };

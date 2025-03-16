@@ -10,11 +10,11 @@ import { usePathname, useRouter } from "next/navigation";
 import { signOut } from "aws-amplify/auth";
 import { Bell, MessageCircle, Plus, Search } from "lucide-react";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { SidebarTrigger } from "./ui/sidebar";
@@ -58,9 +58,9 @@ const Navbar = () => {
                 className="w-6 h-6"
               />
               <div className="text-xl font-bold">
-                RENT
+                RATE
                 <span className="text-secondary-500 font-light hover:!text-primary-300">
-                  IFUL
+                  ARAB
                 </span>
               </div>
             </div>
@@ -95,7 +95,6 @@ const Navbar = () => {
         </div>
         {!isDashboardPage && (
           <p className="text-primary-200 hidden md:block">
-            Discover your perfect rental apartment with our advanced search
           </p>
         )}
         <div className="flex items-center gap-5">
