@@ -16,34 +16,38 @@
 //   CarouselPrevious,
 // } from "@/components/ui/carousel"
 // import Image from "next/image";
- 
-// export default function ImagesBanner() {
-//     const bannerImages = [
-//         { title: "bannerOne", source: bannerOne },
-//         { title: "bannerTwo", source: bannerTwo },
-//         { title: "bannerThree", source: bannerThree },
-//         { title: "bannerFour", source: bannerFour },
-//         { title: "bannerFive", source: bannerFive },
-//     ];
+
+// interface ImagesBannerProps {
+//     className?: string;
+// }
+
+// const bannerImages = [
+//     { title: "bannerOne", source: bannerOne },
+//     { title: "bannerTwo", source: bannerTwo },
+//     { title: "bannerThree", source: bannerThree },
+//     { title: "bannerFour", source: bannerFour },
+//     { title: "bannerFive", source: bannerFive },
+// ];
+
+// const ImagesBanner: React.FC<ImagesBannerProps> = ({ className }) => {
 //     return (
-//             <div className="relative h-[200px]">
+//             <div className={`relative ${className}`}>
 //                 <Carousel
-//                     opts={{
-//                     align: "start",
-//                     }}
+//                     opts={{ align: "start", loop: true }}
 //                     orientation="vertical"
 //                     className="w-full"
 //             >
-//             <CarouselContent className="object-cover object-center h-[200px]">
+//             <CarouselContent>
 //                 {bannerImages.map((image, index) => (
-//                     <CarouselItem key={index} className="pt-1 ">
-//                     <div className="p-1 h-[200px]">
+//                     <CarouselItem key={index}>
+//                     <div>
 //                         <Card>
-//                             <CardContent className="flex flex-col items-center justify-center p-4">
+//                             <CardContent>
 //                             <Image
 //                                 src={image.source}
 //                                 alt={image.title}
-//                                 className="w-full h-[200px] object-cover rounded-md"
+//                                 className="w-full"
+//                                 height={1080}
 //                             />
 //                             </CardContent>
 //                         </Card>
@@ -57,3 +61,5 @@
 //         </div>
 //         )
 // };
+
+// export default ImagesBanner;
