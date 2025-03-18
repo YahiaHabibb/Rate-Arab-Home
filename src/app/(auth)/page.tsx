@@ -71,7 +71,7 @@ export default function Login() {
           Log in to Rate Arab
         </h1>
         <p className="mb-8 text-center sm:text-left text-base dark:text-[#f1f7feb5] font-normal">
-          Don't have an account?{" "}
+            Don&apos;t forget to check your email.{" "}
           <Link className="text-primary" href="/signup">
             Sign up
           </Link>

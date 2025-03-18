@@ -200,10 +200,10 @@ const EnableMfa = () => {
                   </div>
                 ) : (
                   <span className="text-sm text-[#0007149f] dark:text-muted-foreground font-normal">
-                    Can't scan the code?
+                    Can&apos;t scan the code?
                     <button
                       className="block text-primary transition duration-200 ease-in-out hover:underline
-                   dark:text-white"
+                    dark:text-white"
                       type="button"
                       onClick={() => setShowKey(true)}
                     >

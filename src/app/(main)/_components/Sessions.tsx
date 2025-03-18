@@ -41,7 +41,7 @@ const Sessions = () => {
         });
       },
     });
-  }, []);
+  }, [mutate, refetch]);
 
   return (
     <div className="via-root to-root rounded-xl bg-gradient-to-r p-0.5">
@@ -86,7 +86,7 @@ const Sessions = () => {
                 "
                 >
                   {otherSessions?.map((session) => (
-                    <li>
+                    <li key={session._id}>
                       <SessionItem
                         loading={isPending}
                         userAgent={session.userAgent}
