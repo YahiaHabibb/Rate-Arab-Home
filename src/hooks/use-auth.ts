@@ -1,15 +1,15 @@
-// "use client";
+"use client";
 
-// import { getUserSessionQueryFn } from "@/lib/api";
-// import { useQuery } from "@tanstack/react-query";
+import { getUserSessionQueryFn } from "@/lib/api";
+import { useQuery } from "@tanstack/react-query";
 
-// const useAuth = () => {
-//   const query = useQuery({
-//     queryKey: ["authUser"],
-//     queryFn: getUserSessionQueryFn,
-//     staleTime: Infinity,
-//   });
-//   return query;
-// };
+const useAuth = () => {
+  const query = useQuery({
+    queryKey: ["authUser"],
+    queryFn: getUserSessionQueryFn,
+    staleTime: Infinity,
+  });
+  return query;
+};
 
-// export default useAuth;
+export default useAuth;
