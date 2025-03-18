@@ -1,0 +1,10 @@
+MONGO API AND USER AND PASSWORD
+
+2oRt5zsT77F2qkEC
+yahiahabib
+mongodb+srv://yahiahabib:2oRt5zsT77F2qkEC@mern-cluster.jsze5.mongodb.net/
+
+resend api
+re_NspjSvUx_Ecw5CWMFTSM743W57zmLC4re
+
+p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSeqpbi02T+WRlt6Nf3yOMCt0XrNiiYpBIPcannSkc20PSTUSPAUk1ZNTfCcEYxy5cvdE8ZeXXoknm/63y0lN7DV+5ZyMNfLonbCUFJtM2gM9e+deI4ZUjPdIPOw43sUh08yOuX42aTYQubElmWh1cjylVff/nRo7LIM0yQ4ic6QIDAQAB
