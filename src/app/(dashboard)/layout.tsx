@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import { SidebarProvider } from "@/components/ui/sidebar";
-import Sidebar from "@/components/AppSidebar";
+// import Sidebar from "@/components/AppSidebar";
 import { NAVBAR_HEIGHT } from "@/lib/constants";
 import React, { useEffect, useState } from "react";
 import { useGetAuthUserQuery } from "@/state/api";
@@ -33,8 +33,8 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     }
   }, [authUser, router, pathname]);
 
-  if (authLoading || isLoading) return <>Loading...</>;
-  if (!authUser?.userRole) return null;
+  // if (authLoading || isLoading) return <>Loading...</>;
+  // if (!authUser?.userRole) return null;
 
   return (
     <SidebarProvider>
@@ -42,7 +42,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
         <Navbar />
         <div style={{ marginTop: `${NAVBAR_HEIGHT}px` }}>
           <main className="flex">
-            <Sidebar userType={authUser.userRole.toLowerCase()} />
+            {/* <Sidebar userType={authUser.userRole.toLowerCase()} /> */}
             <div className="flex-grow transition-all duration-300">
               {children}
             </div>
